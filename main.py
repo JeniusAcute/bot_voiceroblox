@@ -8,6 +8,9 @@ import asyncio
 import datetime
 import os
 
+from keep_alive import keep_alive
+keep_alive()
+
 #=================================================
 intents = discord.Intents.all()
 
