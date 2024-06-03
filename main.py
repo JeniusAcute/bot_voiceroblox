@@ -72,4 +72,9 @@ async def messspamtest(ctx):
     else:
         await ctx.send("nothing")
 #=================================================
-client.run(TOKEN, bot = False)
+try:
+  client.run(TOKEN, bot = False)
+except discord.errors.HTTPException:
+  print("\n\n\nBLOCKED BY RATE LIMITS\nRESTARTING NOW\n\n\n")
+  os.system('kill 1')
+  os.system("python restarter.py")
