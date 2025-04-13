@@ -35,9 +35,9 @@ async def on_ready():
     print(prfx + "Phien ban Python:     " + str(platform.python_version()))
     print(" ")
 
-    id_kenh = 1252481486322667591
+    id_kenh = 1360987293212479538
     #id_kenh3 = random.choice([1165298450880024756,1165298468726784142,1165298484979695737])
-    id_server = 1164530814281842698
+    id_server = 1110771213854330880
 
     #vc = discord.utils.get(client.get_guild(id_server).channels, id = id_kenh3)
     #await vc.guild.change_voice_state(channel = vc, self_mute = True, self_deaf = True)
