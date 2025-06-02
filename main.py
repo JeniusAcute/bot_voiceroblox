@@ -35,7 +35,7 @@ async def on_ready():
     print(prfx + "Phien ban Python:     " + str(platform.python_version()))
     print(" ")
 
-    id_kenh = 1166666665518452868
+    id_kenh = 1247080060708585545
     #id_kenh3 = random.choice([1165298450880024756,1165298468726784142,1165298484979695737])
     id_server = 1164530814281842698
 
