@@ -45,7 +45,7 @@ async def on_ready():
     #await asyncio.sleep(5.5)
   
     vc = discord.utils.get(client.get_guild(id_server).channels, id = id_kenh)
-    await vc.guild.change_voice_state(channel = vc, self_mute = True, self_deaf = True)
+    await vc.guild.change_voice_state(channel = vc, self_mute = True, self_deaf = False)
 
 #--------------
 @client.event
