@@ -37,7 +37,7 @@ async def on_ready():
 
     id_kenh = 1247080060708585545
     #id_kenh3 = random.choice([1165298450880024756,1165298468726784142,1165298484979695737])
-    id_server = 1164530814281842698
+    id_server = 1040974953274671205
 
     #vc = discord.utils.get(client.get_guild(id_server).channels, id = id_kenh3)
     #await vc.guild.change_voice_state(channel = vc, self_mute = True, self_deaf = True)
