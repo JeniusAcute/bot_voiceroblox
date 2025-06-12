@@ -1,3 +1,4 @@
+discord==1.7.3
 discord.py==1.7.3
 flask
 async-timeout==3.0.1
