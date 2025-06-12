@@ -1,15 +1,6 @@
 import discord
 from discord.ext import commands
-#from discord import app_commands
-import time
-import platform
-import random
-import asyncio
-import datetime
 import os
-
-from keep_alive import keep_alive
-keep_alive()
 
 #=================================================
 intents = discord.Intents.all()
@@ -31,13 +22,11 @@ async def on_ready():
 
     id_kenh = 1247080044816498711
     id_server = 1040974953274671205
-  
+    
     vc = discord.utils.get(client.get_guild(id_server).channels, id = id_kenh)
     await vc.guild.change_voice_state(channel = vc, self_mute = True, self_deaf = False)
 
 #--------------
-
-#==================================================
 
 #=================================================
 client.run(TOKEN, bot = False)
