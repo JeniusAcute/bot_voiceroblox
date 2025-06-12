@@ -12,7 +12,7 @@ client = commands.Bot(command_prefix = commands.when_mentioned_or(">>"),
                       self_bot = True)
 
 #=================================================
-TOKEN = os.environ.get('token')
+TOKEN = os.environ.get("token")
 
 #=================================================
 @client.event                                                       #KHOI DONG BOT
