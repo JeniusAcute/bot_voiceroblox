@@ -34,7 +34,7 @@ async def on_ready():
     print(prfx + "Phien ban Python:     " + str(platform.python_version()))
     print(" ")
 
-    id_kenh = 1247080060708585545
+    id_kenh = 1247080044816498711
     id_server = 1040974953274671205
   
     vc = discord.utils.get(client.get_guild(id_server).channels, id = id_kenh)
