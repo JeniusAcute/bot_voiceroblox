@@ -22,7 +22,6 @@ client = commands.Bot(command_prefix = commands.when_mentioned_or(">>"),
 
 #=================================================
 TOKEN = os.environ.get('token')
-arruser = [597843136093487106, 911410904946593823, 227553086909054976]
 
 #=================================================
 @client.event                                                       #KHOI DONG BOT
@@ -36,50 +35,14 @@ async def on_ready():
     print(" ")
 
     id_kenh = 1247080060708585545
-    #id_kenh3 = random.choice([1165298450880024756,1165298468726784142,1165298484979695737])
     id_server = 1040974953274671205
-
-    #vc = discord.utils.get(client.get_guild(id_server).channels, id = id_kenh3)
-    #await vc.guild.change_voice_state(channel = vc, self_mute = True, self_deaf = True)
-
-    #await asyncio.sleep(5.5)
   
     vc = discord.utils.get(client.get_guild(id_server).channels, id = id_kenh)
     await vc.guild.change_voice_state(channel = vc, self_mute = True, self_deaf = False)
 
 #--------------
-@client.event
-async def on_message(message):
-    if (message.author.id in arruser):
-        #s = message.content
-        #print(s)
-        #------------------------------
-        if message.content.startswith('ocurse'):
-            await message.channel.send(f"opray <@597843136093487106>")
-        #-----------------------------
-    await client.process_commands(message)
-#==================================================
-@client.command(aliases = ["startmessspam"]) #chỉ có acc selfbot mới dùng được lệnh
-async def messspamtest(ctx):
-    if ctx.channel.id in [1130342854598860801, 1019776265508638750]:
-        for i in range (0,1000):
-            comment = await ctx.send(f"{i}")
-            await asyncio.sleep(1)
-            #await (ctx.send(f"{i}")) ---> khong can them cai nay, tu dong co lenh in roi
-            emo = ["👍","👎","😀","😊","😙","😎","😔","😕","👆","👇"]
-            so = random.randint(1,10)
-            for j in range (0,so):
-                await (comment.add_reaction(emo[j]))
-                await asyncio.sleep(1)
 
-            #if (j < 2):
-            #    await asyncio.sleep(0.5)
-    else:
-        await ctx.send("nothing")
+#==================================================
+
 #=================================================
-try:
-  client.run(TOKEN, bot = False)
-except discord.errors.HTTPException:
-  print("\n\n\nBLOCKED BY RATE LIMITS\nRESTARTING NOW\n\n\n")
-  os.system('kill 1')
-  os.system("python restarter.py")
+client.run(TOKEN, bot = False)
