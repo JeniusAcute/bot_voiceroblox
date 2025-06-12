@@ -26,13 +26,8 @@ TOKEN = os.environ.get('token')
 #=================================================
 @client.event                                                       #KHOI DONG BOT
 async def on_ready():
-    print(" ")
-    prfx = (time.strftime("%H:%M:%S  ", time.gmtime()))
-    print(prfx + "Dang nhap Bot:        " +  client.user.name)
-    print(prfx + "Bot ID:               " +  str(client.user.id))
-    print(prfx + "Phien  ban discord.py:    " + discord.__version__)
-    print(prfx + "Phien ban Python:     " + str(platform.python_version()))
-    print(" ")
+
+    print("Done")
 
     id_kenh = 1247080044816498711
     id_server = 1040974953274671205
